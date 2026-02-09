@@ -1,0 +1,136 @@
+/* --- Hero Section Styles --- */
+.hero-section {
+  padding: 80px 0; /* Memberi ruang napas atas-bawah */
+  background-color: #f9fdf9; /* Warna hijau sangat muda (hampir putih) */
+  overflow: hidden; /* Mencegah elemen bocor keluar */
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center; /* Vertikal center */
+  justify-content: space-between;
+  gap: 50px; /* Jarak antara teks dan gambar */
+}
+
+/* --- Typography & Content --- */
+.hero-content {
+  flex: 1; /* Mengambil 50% lebar */
+  max-width: 600px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e8f5e9;
+  color: var(--primary-green);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 3rem; /* Besar dan tegas */
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.highlight-text {
+  color: var(--primary-green); /* Fokus warna pada kata penting */
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--text-grey);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* --- Buttons --- */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* Btn Primary sudah ada di header.css, kita buat Btn Secondary */
+.btn-secondary {
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  border: 1px solid #ccc;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-dark);
+  background-color: #f0f0f0;
+}
+
+/* --- Stats --- */
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.stat-item span {
+  font-size: 0.9rem;
+  color: var(--text-grey);
+}
+
+.stat-separator {
+  width: 1px;
+  height: 40px;
+  background-color: #ddd;
+}
+
+/* --- Image Section --- */
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px; /* Sudut tumpul modern */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Efek melayang */
+  position: relative;
+  z-index: 2;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 900px) {
+  .hero-layout {
+    flex-direction: column-reverse; /* Gambar pindah ke atas di HP, teks di bawah */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}

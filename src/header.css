@@ -1,0 +1,98 @@
+/* --- Variables untuk konsistensi warna --- */
+:root {
+  --primary-green: #2e7d32; /* Hijau tua profesional (bukan hijau neon) */
+  --light-green: #4caf50; /* Hijau segar untuk aksen */
+  --text-dark: #333333; /* Warna teks bacaan */
+  --text-grey: #666666; /* Warna teks sekunder */
+  --bg-white: #ffffff;
+  --shadow-subtle: 0 2px 10px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+}
+
+/* --- Layout Utama Header --- */
+.site-header {
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.8rem 0;
+  border-bottom: 3px solid var(--primary-green);
+  width: 100%;
+  display: block; /* Memastikan header bersifat blok penuh */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Pastikan container mengambil lebar penuh yg tersedia */
+  box-sizing: border-box;
+}
+
+/* --- Logo Styling --- */
+.logo {
+  height: 60px; /* Ukuran proporsional */
+  width: auto;
+  display: block;
+}
+
+/* --- Navigation Styling --- */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 60px; /* Jarak antar menu */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-family: "Segoe UI", sans-serif; /* Font modern standar */
+}
+
+/* Efek Hover Menu */
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-green);
+}
+
+/* --- Button Styling (CTA) --- */
+.btn-primary {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px; /* Sudut melengkung modern */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary-green);
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: var(--primary-green);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+/* --- Mobile Responsiveness (Basic) --- */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none; /* Disembunyikan dulu untuk mobile (nanti butuh JS buat toggle) */
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .container {
+    justify-content: center;
+  }
+}
