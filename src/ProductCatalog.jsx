@@ -1,6 +1,15 @@
 import React from "react";
 import "./productCatalog.css";
-
+import jerukMedan from "./assets/catalog/jerukMedan.jpeg";
+import anggurMerahSekat from "./assets/catalog/anggurMerahSekat.jpeg";
+import stroberyABC from "./assets/catalog/stroberyABC.jpeg";
+import apelFuji from "./assets/catalog/apelFuji.jpg";
+import anggurMerahCurah from "./assets/catalog/anggurMerahCurah.jpeg";
+import apelMalang from "./assets/catalog/apelMalang.jpg";
+import belimbing from "./assets/catalog/belimbing.jpg";
+import nagaMerah from "./assets/catalog/nagaMerah.jpeg";
+import jerukSantang from "./assets/catalog/jerukSantang.jpg";
+import manggaArumanis from "./assets/catalog/manggaArumanis.jpg";
 // --- DATA DARI GAMBAR LIST HARGA ---
 const products = [
   // --- ANGGUR ---
@@ -10,8 +19,7 @@ const products = [
     price: 210000,
     unit: "6 kg",
     category: "Buah Segar",
-    image:
-      "https://images.unsplash.com/photo-1537640538965-1756deb1797e?w=500&q=80",
+    image: anggurMerahCurah,
   },
   {
     id: 2,
@@ -19,8 +27,7 @@ const products = [
     price: 225000,
     unit: "6 kg",
     category: "Buah Segar",
-    image:
-      "https://images.unsplash.com/photo-1537640538965-1756deb1797e?w=500&q=80",
+    image: anggurMerahSekat,
   },
   // --- APEL FUJI (Grosir Dus) ---
   {
@@ -28,7 +35,7 @@ const products = [
     name: "Apel Fuji (±88-100 pcs)",
     price: 490000,
     unit: "20 kg/dus",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500&q=80",
   },
@@ -37,7 +44,7 @@ const products = [
     name: "Apel Fuji (±125 pcs)",
     price: 500000,
     unit: "20 kg/dus",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500&q=80",
   },
@@ -46,7 +53,7 @@ const products = [
     name: "Apel Fuji (±138 pcs)",
     price: 520000,
     unit: "20 kg/dus",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?w=500&q=80",
   },
@@ -55,7 +62,7 @@ const products = [
     name: "Apel Fuji (±163 pcs)",
     price: 520000,
     unit: "20 kg/dus",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?w=500&q=80",
   },
@@ -64,7 +71,7 @@ const products = [
     name: "Apel Fuji (±175 pcs)",
     price: 520000,
     unit: "20 kg/dus",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500&q=80",
   },
@@ -73,7 +80,7 @@ const products = [
     name: "Apel Fuji (±198 pcs)",
     price: 520000,
     unit: "20 kg/dus",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500&q=80",
   },
@@ -84,8 +91,7 @@ const products = [
     price: 22000,
     unit: "1 kg",
     category: "Buah Lokal",
-    image:
-      "https://images.unsplash.com/photo-1631160384236-0428d0034a78?w=500&q=80",
+    image: apelMalang,
   },
   {
     id: 10,
@@ -93,8 +99,7 @@ const products = [
     price: 9000,
     unit: "1 kg",
     category: "Buah Lokal",
-    image:
-      "https://images.unsplash.com/photo-1628495679944-d62158dcbb93?w=500&q=80",
+    image: belimbing,
   },
   {
     id: 11,
@@ -102,8 +107,7 @@ const products = [
     price: 10000,
     unit: "1 kg",
     category: "Buah Lokal",
-    image:
-      "https://images.unsplash.com/photo-1527863280617-15526569eb56?w=500&q=80",
+    image: nagaMerah,
   },
   // --- JERUK ---
   {
@@ -112,8 +116,7 @@ const products = [
     price: 17000,
     unit: "1 kg",
     category: "Buah Lokal",
-    image:
-      "https://images.unsplash.com/photo-1611178474053-2713e55180ce?w=500&q=80",
+    image: jerukMedan,
   },
   {
     id: 13,
@@ -121,26 +124,23 @@ const products = [
     price: 15000,
     unit: "1 kg",
     category: "Buah Lokal",
-    image:
-      "https://images.unsplash.com/photo-1611178474053-2713e55180ce?w=500&q=80",
+    image: jerukMedan,
   },
   {
     id: 14,
     name: "Jeruk Santang M",
     price: 200000,
     unit: "6 kg",
-    category: "Buah Impor",
-    image:
-      "https://images.unsplash.com/photo-1588612716035-7177579f187d?w=500&q=80",
+    category: "Buah Lokal",
+    image: jerukSantang,
   },
   {
     id: 15,
     name: "Jeruk Santang L (±25-30)",
     price: 190000,
     unit: "6 kg",
-    category: "Buah Impor",
-    image:
-      "https://images.unsplash.com/photo-1588612716035-7177579f187d?w=500&q=80",
+    category: "Buah Lokal",
+    image: jerukSantang,
   },
   // --- LENGKENG ---
   {
@@ -186,8 +186,7 @@ const products = [
     price: 18000,
     unit: "1 kg",
     category: "Buah Lokal",
-    image:
-      "https://images.unsplash.com/photo-1553279768-865429fa0078?w=500&q=80",
+    image: manggaArumanis,
   },
   {
     id: 21,
@@ -203,7 +202,7 @@ const products = [
     name: "Pir Yali 96/80",
     price: 320000,
     unit: "17 kg/dus",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1632160738686-e3d646960251?w=500&q=80",
   },
@@ -248,7 +247,7 @@ const products = [
     name: "Sunkist Valencia",
     price: 420000,
     unit: "14 kg",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1557800636-894a64c1696f?w=500&q=80",
   },
@@ -257,7 +256,7 @@ const products = [
     name: "Sunkist Nevel 64/72",
     price: 360000,
     unit: "14 kg",
-    category: "Buah Impor",
+    category: "Buah Lokal",
     image:
       "https://images.unsplash.com/photo-1557800636-894a64c1696f?w=500&q=80",
   },

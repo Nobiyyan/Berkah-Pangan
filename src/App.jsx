@@ -1,6 +1,7 @@
 import Header from "./Header.jsx";
 import Hero from "./Hero.jsx";
 import "./App.css";
+import About from "./About.jsx";
 import ProductCatalog from "./ProductCatalog.jsx";
 import Footer from "./Footer.jsx";
 
@@ -11,6 +12,7 @@ function App() {
 
       <main>
         <Hero />
+        <About />
         <ProductCatalog />
         <Footer />
       </main>

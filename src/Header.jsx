@@ -30,11 +30,6 @@ function Header() {
                 Katalog Buah
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#services" className="nav-link">
-                Layanan
-              </a>
-            </li>
           </ul>
         </nav>
 
