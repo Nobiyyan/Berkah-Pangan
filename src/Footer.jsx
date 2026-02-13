@@ -56,25 +56,24 @@ const Footer = () => {
           <div className="contact-item">
             <span className="icon">📍</span>
             <p>
-              Jl. Raya Agrobisnis No. 88,
-              <br />
-              Gudang B4, Jakarta Selatan, 12000
+              Jl. Gading Tutuka 1 No. 01 RT 04/04 <br />
+              Kp. Cipeer Kel. Cingcin, Kec. Soreang, Kab. Bandung
             </p>
           </div>
           <div className="contact-item">
             <span className="icon">📞</span>
-            <p>+62 812-3456-7890 (WhatsApp)</p>
+            <p>+62 813-2213-4445 (WhatsApp)</p>
           </div>
           <div className="contact-item">
             <span className="icon">📧</span>
-            <p>halo@gudangsegar.com</p>
+            <p>barokahpanganpasundan@gmail.com</p>
           </div>
         </div>
       </div>
 
       {/* Bagian Copyright Bawah */}
       <div className="footer-bottom">
-        <p>&copy; 2025 Gudang Segar Indonesia. All rights reserved.</p>
+        <p>&copy; 2025 Berkah Pangan. All rights reserved.</p>
       </div>
     </footer>
   );

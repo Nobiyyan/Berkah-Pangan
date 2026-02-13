@@ -21,14 +21,14 @@ const Hero = () => {
             <a href="#katalog" className="btn-primary">
               Lihat Katalog
             </a>
-            <a href="#konsultasi" className="btn-secondary">
-              Konsultasi Stok
+            <a href="https://wa.me/6281322134445" className="btn-secondary">
+              Pesan sekarang
             </a>
           </div>
 
           <div className="hero-stats">
             <div className="stat-item">
-              <strong>50+</strong>
+              <strong>20+</strong>
               <span>Jenis Buah</span>
             </div>
             <div className="stat-separator"></div>
